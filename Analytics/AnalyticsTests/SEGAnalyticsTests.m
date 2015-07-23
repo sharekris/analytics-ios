@@ -5,7 +5,7 @@
 #import "SEGIntegration.h"
 #import "SEGExecutor.h"
 #import "SEGSynchronousExecutor.h"
-#import "SEGClient.h"
+#import "SEGCDNClient.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
@@ -17,7 +17,7 @@
 @property(nonatomic, copy) NSDictionary *integrations;
 
 - (instancetype)initWithWriteKey:(NSString *)writeKey
-                      withClient:(SEGClient *)client
+                      withClient:(SEGCDNClient *)cdn
                     withExecutor:(id<SEGExecutor>)executor;
 
 @end
@@ -36,10 +36,11 @@
 
   NSString *writeKey = @"MlTmISmburwl2nN9o3NFpGfElujcfb0q";
   SEGSynchronousExecutor *executor = [SEGSynchronousExecutor executor];
-  SEGClient *client = [SEGClient clientWithWriteKey:writeKey]; // todo: use fake
+  SEGCDNClient *cdn =
+      [SEGCDNClient clientWithWriteKey:writeKey]; // todo: use fake
 
   _analytics = [[SEGAnalytics alloc] initWithWriteKey:writeKey
-                                           withClient:client
+                                           withClient:cdn
                                          withExecutor:executor];
 
   _mockIntegration = mockProtocol(@protocol(SEGIntegration));

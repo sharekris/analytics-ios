@@ -1,9 +1,9 @@
-#import "SEGClient.h"
+#import "SEGCDNClient.h"
 
-@implementation SEGClient
+@implementation SEGCDNClient
 
 + (instancetype)clientWithWriteKey:(NSString *)writeKey {
-  return [[SEGClient alloc] initWithWriteKey:writeKey];
+  return [[SEGCDNClient alloc] initWithWriteKey:writeKey];
 }
 
 - (instancetype)initWithWriteKey:(NSString *)writeKey {

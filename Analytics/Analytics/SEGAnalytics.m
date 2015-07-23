@@ -1,7 +1,7 @@
 #import "SEGAnalytics.h"
 #import "SEGIntegrationsRegistry.h"
 #import "SEGIntegration.h"
-#import "SEGClient.h"
+#import "SEGCDNClient.h"
 #import "SEGExecutor.h"
 #import "SEGSerialExecutor.h"
 #import "SEGSerialExecutor.h"
@@ -10,7 +10,7 @@
 @interface SEGAnalytics ()
 
 @property(nonatomic, readonly) NSString *writeKey;
-@property(nonatomic, readonly) SEGClient *client;
+@property(nonatomic, readonly) SEGCDNClient *cdn;
 @property(nonatomic, readonly) id<SEGExecutor> executor;
 @property(nonatomic, copy) NSDictionary *integrations; // readwrite for testing
 
@@ -20,25 +20,25 @@
 
 + (instancetype)createWithConfiguration:
     (SEGAnalyticsConfiguration *)configuration {
-  SEGClient *client = [SEGClient clientWithWriteKey:configuration.writeKey];
+  SEGCDNClient *cdn = [SEGCDNClient clientWithWriteKey:configuration.writeKey];
   SEGSerialExecutor *executor =
       [SEGSerialExecutor executorWithName:@"SEGAnalytics"];
   return [[SEGAnalytics alloc] initWithWriteKey:configuration.writeKey
-                                     withClient:client
+                                     withClient:cdn
                                    withExecutor:executor];
 }
 
 - (instancetype)initWithWriteKey:(NSString *)writeKey
-                      withClient:(SEGClient *)client
+                      withClient:(SEGCDNClient *)cdn
                     withExecutor:(id<SEGExecutor>)executor {
   self = [super init];
   if (self) {
     _writeKey = writeKey;
-    _client = client;
+    _cdn = cdn;
     _executor = executor;
 
     [_executor submit:^{
-      NSDictionary *settings = [_client settings];
+      NSDictionary *settings = [_cdn settings];
       [self initializeIntegrationsWithSettings:settings];
     }];
   }

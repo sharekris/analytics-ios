@@ -16,9 +16,6 @@
 		6E0795D61B61559D002A2502 /* SEGAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795D41B61559D002A2502 /* SEGAnalyticsConfiguration.h */; };
 		6E0795D71B61559D002A2502 /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0795D51B61559D002A2502 /* SEGAnalyticsConfiguration.m */; };
 		6E0795D81B61559D002A2502 /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0795D51B61559D002A2502 /* SEGAnalyticsConfiguration.m */; };
-		6E0795DC1B6155DF002A2502 /* SEGClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795DA1B6155DF002A2502 /* SEGClient.h */; };
-		6E0795DD1B6155DF002A2502 /* SEGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0795DB1B6155DF002A2502 /* SEGClient.m */; };
-		6E0795DE1B6155DF002A2502 /* SEGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0795DB1B6155DF002A2502 /* SEGClient.m */; };
 		6E0795E11B61561F002A2502 /* SEGExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795DF1B61561F002A2502 /* SEGExecutor.h */; };
 		6E0795E61B61564F002A2502 /* SEGLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795E41B61564F002A2502 /* SEGLog.h */; };
 		6E0795EB1B61567B002A2502 /* SEGSerialExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795E91B61567B002A2502 /* SEGSerialExecutor.h */; };
@@ -31,11 +28,14 @@
 		6E0796011B615B10002A2502 /* SEGIntegrationsRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0795FF1B615B10002A2502 /* SEGIntegrationsRegistry.h */; };
 		6E0796021B615B10002A2502 /* SEGIntegrationsRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0796001B615B10002A2502 /* SEGIntegrationsRegistry.m */; };
 		6E0796031B615B10002A2502 /* SEGIntegrationsRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0796001B615B10002A2502 /* SEGIntegrationsRegistry.m */; };
-		6E07960D1B615C57002A2502 /* SEGClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E07960C1B615C57002A2502 /* SEGClientTests.m */; };
 		6E07960F1B615C89002A2502 /* SEGAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E07960E1B615C89002A2502 /* SEGAnalyticsTests.m */; };
 		6E0B47D31B6160E80008FFC2 /* SEGSynchronousExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B47D21B6160E80008FFC2 /* SEGSynchronousExecutor.m */; };
 		6E0B47D61B61616C0008FFC2 /* SEGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0B47D41B61616C0008FFC2 /* SEGUtils.h */; };
 		6E0B47D71B61616C0008FFC2 /* SEGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B47D51B61616C0008FFC2 /* SEGUtils.m */; };
+		6EEDD4331B6197F500D33CDA /* SEGCDNClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEDD4311B6197F500D33CDA /* SEGCDNClient.h */; };
+		6EEDD4341B6197F500D33CDA /* SEGCDNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDD4321B6197F500D33CDA /* SEGCDNClient.m */; };
+		6EEDD4351B6197F500D33CDA /* SEGCDNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDD4321B6197F500D33CDA /* SEGCDNClient.m */; };
+		6EEDD4381B61987000D33CDA /* SEGCDNClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDD4371B61987000D33CDA /* SEGCDNClientTests.m */; };
 		FD60A3B6B6D2F612421882A5 /* libPods-AnalyticsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECBC4B3237489A73AE5B1E7 /* libPods-AnalyticsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +62,6 @@
 		6E0795D01B61555A002A2502 /* SEGAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAnalytics.m; sourceTree = "<group>"; };
 		6E0795D41B61559D002A2502 /* SEGAnalyticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		6E0795D51B61559D002A2502 /* SEGAnalyticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAnalyticsConfiguration.m; sourceTree = "<group>"; };
-		6E0795DA1B6155DF002A2502 /* SEGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGClient.h; path = Internal/SEGClient.h; sourceTree = "<group>"; };
-		6E0795DB1B6155DF002A2502 /* SEGClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGClient.m; path = Internal/SEGClient.m; sourceTree = "<group>"; };
 		6E0795DF1B61561F002A2502 /* SEGExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGExecutor.h; path = Internal/SEGExecutor.h; sourceTree = "<group>"; };
 		6E0795E41B61564F002A2502 /* SEGLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGLog.h; path = Internal/SEGLog.h; sourceTree = "<group>"; };
 		6E0795E91B61567B002A2502 /* SEGSerialExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGSerialExecutor.h; path = Internal/SEGSerialExecutor.h; sourceTree = "<group>"; };
@@ -73,12 +71,14 @@
 		6E0795FB1B6158D4002A2502 /* SEGMixpanelIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGMixpanelIntegration.m; path = Integrations/Mixpanel/SEGMixpanelIntegration.m; sourceTree = "<group>"; };
 		6E0795FF1B615B10002A2502 /* SEGIntegrationsRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationsRegistry.h; path = Integrations/SEGIntegrationsRegistry.h; sourceTree = "<group>"; };
 		6E0796001B615B10002A2502 /* SEGIntegrationsRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGIntegrationsRegistry.m; path = Integrations/SEGIntegrationsRegistry.m; sourceTree = "<group>"; };
-		6E07960C1B615C57002A2502 /* SEGClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGClientTests.m; path = Internal/SEGClientTests.m; sourceTree = "<group>"; };
 		6E07960E1B615C89002A2502 /* SEGAnalyticsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAnalyticsTests.m; sourceTree = "<group>"; };
 		6E0B47D11B6160E80008FFC2 /* SEGSynchronousExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGSynchronousExecutor.h; path = Utils/SEGSynchronousExecutor.h; sourceTree = "<group>"; };
 		6E0B47D21B6160E80008FFC2 /* SEGSynchronousExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGSynchronousExecutor.m; path = Utils/SEGSynchronousExecutor.m; sourceTree = "<group>"; };
 		6E0B47D41B61616C0008FFC2 /* SEGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGUtils.h; path = Internal/SEGUtils.h; sourceTree = "<group>"; };
 		6E0B47D51B61616C0008FFC2 /* SEGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGUtils.m; path = Internal/SEGUtils.m; sourceTree = "<group>"; };
+		6EEDD4311B6197F500D33CDA /* SEGCDNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGCDNClient.h; path = Internal/SEGCDNClient.h; sourceTree = "<group>"; };
+		6EEDD4321B6197F500D33CDA /* SEGCDNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGCDNClient.m; path = Internal/SEGCDNClient.m; sourceTree = "<group>"; };
+		6EEDD4371B61987000D33CDA /* SEGCDNClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGCDNClientTests.m; path = Internal/SEGCDNClientTests.m; sourceTree = "<group>"; };
 		C66B7578CE8603F0630CE102 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D672C085CBC6791E40E7CA51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD39E6884202967958F3BE8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,14 +170,14 @@
 		6E0795D91B6155C2002A2502 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				6E0795DA1B6155DF002A2502 /* SEGClient.h */,
-				6E0795DB1B6155DF002A2502 /* SEGClient.m */,
 				6E0795DF1B61561F002A2502 /* SEGExecutor.h */,
 				6E0795E41B61564F002A2502 /* SEGLog.h */,
 				6E0795E91B61567B002A2502 /* SEGSerialExecutor.h */,
 				6E0795EA1B61567B002A2502 /* SEGSerialExecutor.m */,
 				6E0B47D41B61616C0008FFC2 /* SEGUtils.h */,
 				6E0B47D51B61616C0008FFC2 /* SEGUtils.m */,
+				6EEDD4311B6197F500D33CDA /* SEGCDNClient.h */,
+				6EEDD4321B6197F500D33CDA /* SEGCDNClient.m */,
 			);
 			name = Internal;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 		6E07960B1B615C43002A2502 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				6E07960C1B615C57002A2502 /* SEGClientTests.m */,
+				6EEDD4371B61987000D33CDA /* SEGCDNClientTests.m */,
 			);
 			name = Internal;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 				6E0795E61B61564F002A2502 /* SEGLog.h in Headers */,
 				6E0795EB1B61567B002A2502 /* SEGSerialExecutor.h in Headers */,
 				6E0796011B615B10002A2502 /* SEGIntegrationsRegistry.h in Headers */,
-				6E0795DC1B6155DF002A2502 /* SEGClient.h in Headers */,
 				6E0795E11B61561F002A2502 /* SEGExecutor.h in Headers */,
 				6E0795FC1B6158D4002A2502 /* SEGMixpanelIntegration.h in Headers */,
+				6EEDD4331B6197F500D33CDA /* SEGCDNClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +427,8 @@
 				6E0795D21B61555A002A2502 /* SEGAnalytics.m in Sources */,
 				6E0795D71B61559D002A2502 /* SEGAnalyticsConfiguration.m in Sources */,
 				6E0B47D71B61616C0008FFC2 /* SEGUtils.m in Sources */,
+				6EEDD4341B6197F500D33CDA /* SEGCDNClient.m in Sources */,
 				6E0796021B615B10002A2502 /* SEGIntegrationsRegistry.m in Sources */,
-				6E0795DD1B6155DF002A2502 /* SEGClient.m in Sources */,
 				6E0795FD1B6158D4002A2502 /* SEGMixpanelIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,14 +437,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EEDD4381B61987000D33CDA /* SEGCDNClientTests.m in Sources */,
 				6E07960F1B615C89002A2502 /* SEGAnalyticsTests.m in Sources */,
 				6E0795FE1B6158D4002A2502 /* SEGMixpanelIntegration.m in Sources */,
 				6E0796031B615B10002A2502 /* SEGIntegrationsRegistry.m in Sources */,
-				6E0795DE1B6155DF002A2502 /* SEGClient.m in Sources */,
 				6E0B47D31B6160E80008FFC2 /* SEGSynchronousExecutor.m in Sources */,
 				6E0795D81B61559D002A2502 /* SEGAnalyticsConfiguration.m in Sources */,
-				6E07960D1B615C57002A2502 /* SEGClientTests.m in Sources */,
 				6E0795D31B61555A002A2502 /* SEGAnalytics.m in Sources */,
+				6EEDD4351B6197F500D33CDA /* SEGCDNClient.m in Sources */,
 				6E0795ED1B61567B002A2502 /* SEGSerialExecutor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

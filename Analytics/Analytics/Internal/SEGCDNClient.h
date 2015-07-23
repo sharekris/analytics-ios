@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface SEGClient : NSObject
+@interface SEGCDNClient : NSObject
 
 + (instancetype)clientWithWriteKey:(NSString *)writeKey;
 
