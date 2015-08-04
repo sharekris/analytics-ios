@@ -14,15 +14,17 @@
 @property (nonatomic, assign) BOOL valid;
 @property (nonatomic, assign) BOOL initialized;
 @property (nonatomic, copy) NSDictionary *settings;
+@property Class kahunaClass;
 
 @end
 
 
 @interface SEGKahunaPushMonitor : NSObject
-@property (atomic) NSDictionary *pushInfo;
-@property (atomic) UIApplicationState applicationState;
-@property (atomic) BOOL kahunaInitialized;
+@property (nonatomic) NSDictionary *pushInfo;
+@property (nonatomic) UIApplicationState applicationState;
+@property (nonatomic) BOOL kahunaInitialized;
 @property (atomic) NSError *failedToRegisterError;
+@property Class kahunaClass;
 
 + (instancetype)sharedInstance;
 - (void)didFinishLaunching:(NSNotification *)userInfo;
