@@ -62,7 +62,6 @@ void (*selKAHOriginalApplicationHandleActionWithIdentifierWithFetchCompletionHan
         // We just need one call to launchWithKey and not multiple. The "start" method is called
         // everytime the app comes to foreground.
         if ([SEGKahunaPushMonitor sharedInstance].kahunaInitialized == NO) {
-            [self.kahunaClass setDebugMode:true];
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wundeclared-selector"
             [self.kahunaClass performSelector:@selector(setSDKWrapper:withVersion:) withObject:SEGMENT withObject:[SEGAnalytics version]];
